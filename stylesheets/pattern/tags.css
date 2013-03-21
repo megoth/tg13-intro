@@ -1,0 +1,11 @@
+/* line 2, ../../sass/pattern/tags.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 6, ../../sass/pattern/tags.scss */
+i,
+em {
+  font-style: italic;
+}

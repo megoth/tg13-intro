@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Introduksjon til JavaScript | av Arne Hassel @megoth</title>
+    <meta name="description" content="En introduksjon til JavaScript designet for å holdes på TG13, som del av UiO: Campus TG" />
+    <meta name="author" content="Arne Hassel" />
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Nettleseren din støtter ikke funksjonene som kreves av by impress.js (rammeverket brukt for å lage denne presentasjonen). Du vil derfor bare se en forenklet versjon av presentasjonen.</p>
+    <p>For å få den beste presentasjonen, anbefales nyeste versjon av <b>Chrome</b>, <b>Safari</b> eller <b>Firefox</b>.</p>
+</div>
+
+<div id="impress">
+
+    <section class="step slide" data-x="-2000" data-y="-2000" id="intro">
+        <h1>Introduksjon til JavaScript</h1>
+        <p>Av Arne Hassel</p>
+        <ul>
+            <li>
+                <a href="http://twitter.com/megoth">@megoth</a>
+            </li>
+            <li>
+                <a href="http://icanhasweb.net">icanhasweb.net</a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="step" data-x="0" data-y="-1000" data-scale="4" id="examples">
+        <h2>Eksempler</h2>
+    </div>
+
+    <section class="step slide example" data-x="-1000" data-y="-2000" id="webpages">
+        <h2>Nettsider</h2>
+        <div class="illustration">
+            <img src="images/webpages.png" />
+        </div>
+    </section>
+
+    <section class="step slide example" data-x="0" data-y="-2000" id="visualizations">
+        <h2>Visualisering/Data utforskning</h2>
+        <div class="illustration">
+            <img src="images/datavis.png" />
+        </div>
+    </section>
+
+    <section class="step slide example" data-x="1000" data-y="-2000" id="games">
+        <h2>Spill</h2>
+        <div class="illustration">
+            <img src="images/games.png" />
+        </div>
+    </section>
+
+    <section class="step slide example" data-x="1000" data-y="-1000" id="serverside">
+        <h2>Server-applikasjoner</h2>
+        <div class="illustration">
+            <img src="images/serverside.png" />
+        </div>
+        <p>
+            <a href="https://github.com/joyent/node/wiki/Projects,-Applications,-and-Companies-Using-Node">Og en hel haug flere...</a>
+        </p>
+    </section>
+
+    <section class="step slide example" data-x="1000" data-y="0" id="robots">
+        <h2>Styre roboter</h2>
+        <div class="illustration">
+            <img src="images/robots.png" />
+        </div>
+        <p>
+            (Bilder hentet fra <a href="http://baalexander.github.com/rosnodejs/">rosnodejs</a>)
+        </p>
+    </section>
+
+    <section class="step slide example" data-x="0" data-y="0" id="sockets">
+        <h2>Kommunikasjon mellom maskiner</h2>
+        <div class="illustration">
+            <img src="images/server-communication.png" />
+        </div>
+    </section>
+
+    <section class="step slide example" data-x="0" data-y="-1000" id="webrtc">
+        <h2>Kommunikasjon mellom nettsteder</h2>
+        <div class="illustration">
+            <img src="images/client-communication.png" />
+        </div>
+    </section>
+
+    <section class="step slide example" data-x="-1000" data-y="-1000" id="data">
+        <h2>Datastrukturer</h2>
+        <code>{ "title": "Introduction to JavaScript",
+  "author": {
+    "name": "Arne Hassel"
+  },
+  "urls": [
+    "http://pres.icanhasweb.net/tg/intro",
+    "http://bit.ly/XnXEHG"
+  ] }</code>
+    </section>
+
+    <section class="step slide example" data-x="-1000" data-y="0" id="datastorage">
+        <h2>Database-løsninger</h2>
+        <div class="illustration">
+            <img src="images/databases.png" />
+        </div>
+    </section>
+
+    <section class="step slide" data-x="-2000" data-y="0" id="history">
+        <h2>Hva er JavaScript?</h2>
+        <ul>
+            <li>Skapt av <a href="https://brendaneich.com/">Brendan Eich</a> som del av <a href="http://en.wikipedia.org/wiki/Netscape_(web_browser)">nettleseren Netscape</a> i 1995</li>
+            <li>Standardisert som <a href="http://www.ecmascript.org/">ECMAScript</a></li>
+            <li>Utviklingen skjer gjennom mange løp, med mange aktører involvert</li>
+        </ul>
+    </section>
+
+    <section class="step" data-x="-2500" data-y="1250" data-scale="2" id="syntax">
+        <h2>Syntaks</h2>
+    </section>
+
+    <section class="step slide" data-x="-2000" data-y="1000" id="syntax-variables">
+        <h2>Variabler</h2>
+        <code>var a;
+var b = 42;
+var c = "forty two";</code>
+    </section>
+
+    <section class="step slide" data-x="-3000" data-y="1000" id="syntax-functions">
+        <h2>Funksjoner</h2>
+        <code>function sumA (a, b) { return a + b; }
+var sumB = function (a, b) { return a + b; };
+var sumC = new Function("a", "b", "return a + b;");</code>
+        <p>Kallemåter:</p>
+        <code>sumA(4, 5);
+sumA.call({}, 4, 5);
+sumA.apply({}, [4, 5]);</code>
+    </section>
+
+    <section class="step slide" data-x="-3000" data-y="2000" id="syntax-objects">
+        <h2>Objekter</h2>
+        <code>var objectA = { a: 42 };
+var objectB = new Object();
+objectB.a = 42;
+var constructor = new function (a) { this.a = a; };
+var objectC = new constructor(42);</code>
+    </section>
+
+    <section class="step slide" data-x="-2000" data-y="2000" id="syntax-arrays">
+        <h2>Lister</h2>
+        <code>var arrayA = [1, 2];
+var arrayB = new Array(1, 2);
+var arrayC = [];
+arrayC.push(2);
+arrayC.unshift(1);</code>
+    </section>
+
+    <section class="step" data-x="-500" data-y="2250" data-scale="2" id="apis">
+        <h2>APIer</h2>
+    </section>
+
+    <section class="step slide" data-x="-1000" data-y="3000" id="apis-html5">
+        <h2>HTML5 APIer</h2>
+        <ul>
+            <li>Audio <small>(<a href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-audio-element">W3C</a>, <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-audio-element">WHATWG</a>)</small></li>
+            <li>Video <small>(<a href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-video-element">W3C</a>, <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-video-element">WHATWG</a>)</small></li>
+            <li>History <small>(<a href="http://www.w3.org/html/wg/drafts/html/master/single-page.html">W3C</a>, <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/history.html">WHATWG</a>)</small></li>
+            <li>Web Workers <small>(<a href="http://www.w3.org/TR/workers/">W3C</a>, <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/workers.html">WHATWG</a>)</small></li>
+            <li>Drag and Drop <small>(<a href="http://www.w3.org/html/wg/drafts/html/master/editing.html#dnd">W3C</a>, <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/dnd.html">WHATWG</a>)</small></li>
+            <li>Fullscreen <small>(<a href="https://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html">W3C</a>, <a href="http://fullscreen.spec.whatwg.org/">WHATWG</a>)</small></li>
+        </ul>
+    </section>
+
+    <section class="step slide" data-x="0" data-y="3000" id="apis-existing">
+        <h2>Eksisterende (kule) APIer</h2>
+        <ul>
+            <li>
+                <a href="http://www.w3.org/TR/geolocation-API/">Geolocation</a>
+            </li>
+            <li>
+                <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html">Canvas</a>
+            </li>
+            <li>
+                <a href="http://www.w3.org/TR/SVG/">SVG</a>
+            </li>
+            <li>
+                <a href="http://www.w3.org/TR/websockets/">WebSockets</a>
+            </li>
+            <li>
+                <a href="http://www.w3.org/TR/XMLHttpRequest/">XMLHttpRequest</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/WebGL">WebGL</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="step slide" data-x="0" data-y="2000" id="apis-future">
+        <h2>Kommende (kule) APIer</h2>
+        <ul>
+            <li>
+                <a href="http://www.w3.org/TR/webrtc/">WebRTC</a>
+            </li>
+            <li>
+                <a href="http://www.w3.org/TR/contacts-api/">Contacts</a>
+            </li>
+            <li>
+                <a href="http://www.w3.org/TR/IndexedDB/">Indexed DB</a>
+            </li>
+            <li>
+                <a href="http://www.w3.org/TR/webstorage/">Web Storage</a>
+            </li>
+            <li>
+                <a href="http://www.w3.org/TR/page-visibility/">Page Visibility</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="step slide" data-x="0" data-y="1000" id="javascript-future">
+        <h2>To the future!</h2>
+        <ul>
+            <li>Native apps og Web apps vil bli mere like</li>
+            <li>JavaScript vil bli større i profesjonelle miljøer</li>
+            <li>Videostreaming vil ta (enda mer) av (og JavaScript vil støtte det)</li>
+        </ul>
+    </section>
+
+    <section class="step slide" data-x="1000" data-y="1000" id="tools">
+        <h2>Populære verktøy</h2>
+        <ul>
+            <li>
+                <a href="http://jquery.com/">jQuery</a>
+            </li>
+            <li>
+                <a href="http://underscorejs.org/">Underscore.js</a>
+            </li>
+            <li>
+                <a href="http://d3js.org/">D3.js</a>
+            </li>
+        </ul>
+        <h3>Backend</h3>
+        <ul>
+            <li>
+                <a href="http://nodejs.org/">Node.js</a>
+            </li>
+            <li>
+                <a href="http://expressjs.com/">Express</a>
+            </li>
+            <li>
+                <a href="http://mongoosejs.com/">Mongoose</a> (og <a href="http://www.mongodb.org/">MongoDB</a>)</li>
+        </ul>
+        <h3>Both</h3>
+        <ul>
+            <li>
+                <a href="http://busterjs.org">Buster.JS</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="step slide" data-x="2000" data-y="1000" id="resources">
+        <h2>Ressurser</h2>
+        <ul>
+            <li>
+                <a href="http://docs.webplatform.org/wiki/javascript">JavaScript @ WebPlatform.org</a>
+            </li>
+            <li>
+                <a href="http://dailyjs.com/">DailyJS</a>
+            </li>
+            <li>
+                <a href="http://badassjs.com/">Badass JavaScript</a>
+            </li>
+            <li>
+                <a href="http://www.html5rocks.com/">HTML5 Rocks</a>
+            </li>
+            <li>
+                <a href="http://wtfjs.com/">wtfjs</a>
+            </li>
+        </ul>
+    </section>
+
+    <div id="overview" class="step" data-x="-500" data-y="-500" data-scale="5">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

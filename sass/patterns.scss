@@ -1,0 +1,48 @@
+a {
+  color: black;
+}
+b,
+strong {
+  font-weight: bold;
+}
+code {
+  font-family: monospace;
+  font-size: 0.7em;
+  white-space: pre;
+}
+h2 {
+  color: black;
+}
+i,
+em {
+  font-style: italic;
+}
+ol,
+ul {
+  margin-top: 0.5em;
+}
+ol {
+  margin-left: 1.45em;
+  li {
+    list-style-type: decimal;
+  }
+}
+small {
+  font-size: 0.5em;
+}
+ul {
+  margin-left: 0.8em;
+  li {
+    list-style-type: square;
+  }
+}
+.example {
+  > *:not(code) {
+    text-align: center;
+  }
+  .illustration {
+    img {
+      margin-top: 1em;
+    }
+  }
+}

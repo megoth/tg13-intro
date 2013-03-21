@@ -1,0 +1,32 @@
+/* line 1, ../sass/patterns.scss */
+a {
+  color: black;
+}
+
+/* line 5, ../sass/patterns.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 8, ../sass/patterns.scss */
+code {
+  font-family: monospace;
+  font-size: 0.7em;
+  white-space: pre;
+}
+
+/* line 14, ../sass/patterns.scss */
+i,
+em {
+  font-style: italic;
+}
+
+/* line 18, ../sass/patterns.scss */
+.example > *:not(code) {
+  text-align: center;
+}
+/* line 22, ../sass/patterns.scss */
+.example .illustration img {
+  margin-top: 1em;
+}

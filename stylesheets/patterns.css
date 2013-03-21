@@ -1,0 +1,66 @@
+/* line 1, ../sass/patterns.scss */
+a {
+  color: black;
+}
+
+/* line 5, ../sass/patterns.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 8, ../sass/patterns.scss */
+code {
+  font-family: monospace;
+  font-size: 0.7em;
+  white-space: pre;
+}
+
+/* line 13, ../sass/patterns.scss */
+h2 {
+  color: black;
+}
+
+/* line 17, ../sass/patterns.scss */
+i,
+em {
+  font-style: italic;
+}
+
+/* line 21, ../sass/patterns.scss */
+ol,
+ul {
+  margin-top: 0.5em;
+}
+
+/* line 24, ../sass/patterns.scss */
+ol {
+  margin-left: 1.45em;
+}
+/* line 26, ../sass/patterns.scss */
+ol li {
+  list-style-type: decimal;
+}
+
+/* line 30, ../sass/patterns.scss */
+small {
+  font-size: 0.5em;
+}
+
+/* line 33, ../sass/patterns.scss */
+ul {
+  margin-left: 0.8em;
+}
+/* line 35, ../sass/patterns.scss */
+ul li {
+  list-style-type: square;
+}
+
+/* line 40, ../sass/patterns.scss */
+.example > *:not(code) {
+  text-align: center;
+}
+/* line 44, ../sass/patterns.scss */
+.example .illustration img {
+  margin-top: 1em;
+}
