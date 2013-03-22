@@ -6,7 +6,7 @@ strong {
   font-weight: bold;
 }
 code {
-  font-family: monospace;
+  font-family: $font-code;
   font-size: 0.7em;
   white-space: pre;
 }
@@ -36,13 +36,8 @@ ul {
     list-style-type: square;
   }
 }
-.example {
-  > *:not(code) {
-    text-align: center;
-  }
-  .illustration {
-    img {
-      margin-top: 1em;
-    }
-  }
+.code {
+  font-family: $font-code;
+  font-size: 5em;
+  white-space: nowrap;
 }

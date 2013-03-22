@@ -1,0 +1,21 @@
+{
+  "name": "tg13-intro",
+  "version": "0.1.0",
+  "main": "./js/impress.js",
+  "description": "An introduction to JavaScript",
+  "homepage": "http://pres.icanhasweb.net/tg13-intro",
+  "license" : [
+    "http://bartaz.mit-license.org/"
+  ],
+  "main": [
+    "./js/impress.js"
+  ],
+  "keywords": [
+    "javascript",
+    "tg13"
+  ],
+  "author": {
+    "name": "Arne Hassel",
+    "web": "http://icanhasweb.net"
+  }
+}
